@@ -1,10 +1,21 @@
 # front-end-fundamentals
 
-This repository organizes front end fundamental information into two sections:
-* Core Front End Languages -- HTML, CSS and JavaScript
-* General Front End Topics
+### Overviews
+1. Core Front End Languages
+    * HTML
+    * CSS
+    * JavaScript
+2. General Front End Topics
+    * Accessibility
+    * Internationalization
+    * Internet
+    * Performance
+    * REST
+    * Search Engine Optimization
+    * Security
+    * Testing
 
-Use this repository to study for your upcoming front end engineer interview!
+### Getting Started
 
 Grunt `grunt-contrib-sass` is used to compile Sass into CSS. Note that this library depends on both [Ruby](http://www.ruby-lang.org/en/downloads/) and [Sass](http://sass-lang.com/install).
 
