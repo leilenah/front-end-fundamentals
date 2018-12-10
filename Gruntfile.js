@@ -15,10 +15,24 @@ module.exports = function(grunt) {
                     ext: '.css'
                 }]
             }
+        },
+
+        // TODO: Fix grunt watch
+        watch: {
+            sass: {
+                files: ['**/*.scss']
+            },
+            tasks: ['sass']
         }
     });
 
+    // load tasks
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['sass']);
+    // register tasks
+    grunt.registerTask('default', [
+        'sass',
+        'watch'
+    ]);
 };
