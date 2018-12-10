@@ -1,6 +1,6 @@
 # front-end-fundamentals
 
-## Overviews
+## Overview
 1. Core Front End Languages
     * HTML
     * CSS
