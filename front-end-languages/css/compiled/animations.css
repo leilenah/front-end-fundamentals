@@ -1,0 +1,95 @@
+/**
+ * Animations
+ *
+ * animation:                 shorthand for animation properties
+ * animation-delay:           delays start of animation
+ * animation-direction:       specfies direction the animation should play in
+ * animation-duration:        completion time for 1 cycle of the animation
+ * animation-fill-mode:       specify a style for the element when animation is not playing
+ * animation-iteration-count: specifies number of times animations should play
+ * animation-name:            name of animation as defined in @keyframes
+ * animation-play-state:      specifies whether the animation is running or paused
+ * animation-function-timing: specifies the speed curve of the animation
+ */
+#animated-color-box {
+  width: 200px;
+  height: 200px;
+  background-color: #ffff00;
+  animation-name: change-color;
+  animation-duration: 3s;
+}
+
+#animated-color-percentage-box {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  animation-name: change-color-percentages;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.moving-box-wrapper {
+  position: relative;
+  margin-top: 20px;
+}
+.moving-box-wrapper #moving-box {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  animation: move-box 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/**
+ * Keyframes
+ *
+ * @keyframes is used to specify animation intervals and properties
+ */
+@keyframes change-color {
+  from {
+    background-color: #ff4000;
+  }
+  to {
+    background-color: #ffff00;
+  }
+}
+@keyframes change-color-percentages {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+@keyframes move-box {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}

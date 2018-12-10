@@ -1,0 +1,78 @@
+/**
+ * CSS Animations
+ *
+ * animation:                 shorthand for animation properties
+ * animation-delay:           delays start of animation
+ * animation-direction:       specfies direction the animation should play in
+ * animation-duration:        completion time for 1 cycle of the animation
+ * animation-fill-mode:       specify a style for the element when animation is not playing
+ * animation-iteration-count: specifies number of times animations should play
+ * animation-name:            name of animation as defined in @keyframes
+ * animation-play-state:      specifies whether the animation is running or paused
+ * animation-function-timing: specifies the speed curve of the animation
+ */
+
+$box-margin: 20px;
+$box-size: 200px;
+
+#animated-color-box {
+    width: $box-size;
+    height: $box-size;
+    background-color: #ffff00;
+    animation-name: change-color; // animation name
+    animation-duration: 3s; // duration needs to be specified
+}
+
+#animated-color-percentage-box {
+    margin-top: $box-margin;
+    width: $box-size;
+    height: $box-size;
+    animation-name: change-color-percentages; // animation name
+    animation-duration: 3s; // duration needs to be specified
+    animation-fill-mode: forwards; // animation style will remain the same as last frame
+}
+
+.moving-box-wrapper {
+    position: relative; // div needs to have position if there are absolute children
+    margin-top: $box-margin;
+    #moving-box {
+        position: absolute; // positioned absolutely to nearest positioned ancestor
+        width: $box-size;
+        height: $box-size;
+        background-color: black;
+        animation: move-box 3s;
+        animation-timing-function: ease-in-out; // animation's speed curve
+        animation-delay: 3s; // wait 3 seconds to start the animation
+        animation-iteration-count: infinite; // run the animation forever and ever
+        animation-direction: alternate; // alternate animation direction
+    }
+}
+
+/**
+ * Keyframes
+ *
+ * @keyframes is used to specify animation intervals and properties
+ */
+
+// "from" "to"
+@keyframes change-color {
+    from {background-color: #ff4000;}
+    to {background-color: #ffff00;}
+}
+
+// percentage
+@keyframes change-color-percentages {
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: green;}
+    100% {background-color: blue;}
+}
+
+// position
+@keyframes move-box {
+    0% {left: 0px; top: 0px;}
+    25% {left: 200px; top: 0px;}
+    50% {left: 200px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
