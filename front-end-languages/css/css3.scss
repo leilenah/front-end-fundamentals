@@ -1,0 +1,96 @@
+/**
+ * CSS3
+ *
+ * List of dope features made available in CSS3.
+ * Advanced selectors: https://www.w3.org/TR/selectors/#selectors
+ */
+
+ // animations
+ div {
+    animation: dope-animation 2s linear; // @keyframes dope-animation
+ }
+
+ // transitions
+div {
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s;
+
+    // transition on hover
+    &:hover{
+        width: 200px; // width will transition by 100px
+        height: 200px; // height will transition by 100px
+    }
+}
+
+// calc()
+div {
+    width: calc(100% - 40px); // calc allows for simple arithmetic
+}
+
+// inclusive / exclusive selectors
+div {
+    &:not() {
+    }
+
+    &:is() {
+    }
+
+    $&:where() {
+    }
+
+    &:has() {
+    }
+}
+
+// direction selectors
+div:dir(ltr) {
+}
+
+// data attributes
+div[foo="bar"] {
+}
+
+// language selctor
+div:lang() {
+}
+
+// movement
+div {
+    &:active {
+    }
+
+    &:hover {
+    }
+
+    &:focus {
+    }
+}
+
+// children selectors
+div {
+    &:first-child {
+    }
+
+    &:last-child {
+    }
+
+    &:only-child {
+    }
+}
+
+// sibling selectors
+div {
+    &:first-of-type {
+    }
+
+    &:last-of-type {
+    }
+
+    &:only-of-type {
+    }
+
+    &:nth-of-type(n) {
+
+    }
+}
