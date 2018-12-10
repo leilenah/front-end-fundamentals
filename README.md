@@ -1,6 +1,6 @@
 # front-end-fundamentals
 
-### Overviews
+## Overviews
 1. Core Front End Languages
     * HTML
     * CSS
@@ -15,7 +15,7 @@
     * Security
     * Testing
 
-### Getting Started
+## Getting Started
 
 Grunt `grunt-contrib-sass` is used to compile Sass into CSS. Note that this library depends on both [Ruby](http://www.ruby-lang.org/en/downloads/) and [Sass](http://sass-lang.com/install).
 
