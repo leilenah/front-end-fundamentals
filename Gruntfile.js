@@ -2,8 +2,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
         sass: {
             dist: {
-                options: { // TODO: Remove sourcemap
-                    style: 'expanded'
+                options: {
+                    style: 'expanded',
+                    sourcemap: 'none'
                 },
                 files: {
                     'core-languages/css/animations.css': 'core-languages/css/sass/animations.scss',
