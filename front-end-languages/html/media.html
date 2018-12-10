@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 
+<!-- sound -->
 <audio>
-    Defines sound content.
+    <source="audioSource.mp3" type="audio/mp3">
+    <track src="english-audio-subtitles.vtt" kind="subtitles" srclang="en" label="English">
 </audio>
 
+<!-- video -->
 <video>
-    Defines video player or movie.
+    <source="video.mp4" type="video/mp4">
+    <track src="english-video-subtitles.vtt" kind="subtitles" srclang="en" label="English">
 </video>
 
-<embed>
-    Defines a container for an external appliction.
-</embed>
-
-<source>
-    Defines multiple media resources for media elements (e.g. video and audio)
-</source>
-
-<track>
-    Defines text tracks for media elements (e.g. video and audio)
-</track>
+<!-- embed -->
+<embed src="embedded-animation.swf">
