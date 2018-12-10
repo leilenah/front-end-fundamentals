@@ -34,3 +34,23 @@ div {
     }
 }
 
+// webfonts
+div {
+    font-family: sick-font; // @font-face
+}
+
+@font-face {
+    font-family: sick-font;
+    src: url(sick-font.woff); // path to sick custom font
+}
+
+// border images
+div {
+    border: 10px solid transparent;
+    border-image: url(border.png) 30 round;
+}
+
+// multiple backgrounds
+div {
+    background: url(background1.png), url(background2.png);
+}
