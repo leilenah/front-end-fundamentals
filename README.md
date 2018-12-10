@@ -4,7 +4,8 @@ This repository contains fundamental information on the three core front end tec
 
 Grunt `grunt-contrib-sass` is used to compile Sass into CSS. This library depends on both [Ruby](http://www.ruby-lang.org/en/downloads/) and [Sass](http://sass-lang.com/install), so make sure you have those install before getting started.
 
-```
-npm install
+Install `npm packages`:
+    npm install
 
-```
+Compile Sass changes:
+    grunt sass
