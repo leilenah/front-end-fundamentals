@@ -1,0 +1,26 @@
+/**
+ * CSS Box Model
+ *
+ * Box that wraps around all HTML elements.
+ *     - Content
+ *     - Padding
+ *     - Border
+ *     - Margin
+ */
+.box-model {
+  padding: 10px;
+  border: 20px;
+  margin: 30px;
+}
+
+/**
+ * CSS Box Sizing
+ *
+ * content-box: width and height includes content only (default)
+ * border-box:  width and height properties include padding and border
+ * initial:     sets property to default value
+ * inherit:     inherit from parent
+ */
+.box {
+  box-sizing: border-box;
+}
