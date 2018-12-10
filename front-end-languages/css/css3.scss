@@ -2,7 +2,6 @@
  * CSS3
  *
  * List of dope features made available in CSS3.
- * Advanced selectors: https://www.w3.org/TR/selectors/#selectors
  */
 
  // animations
@@ -28,69 +27,10 @@ div {
     width: calc(100% - 40px); // calc allows for simple arithmetic
 }
 
-// inclusive / exclusive selectors
+// generated content
 div {
-    &:not() {
-    }
-
-    &:is() {
-    }
-
-    $&:where() {
-    }
-
-    &:has() {
+    &:before {
+        content: 'This text will appear at the top of all divs';
     }
 }
 
-// direction selectors
-div:dir(ltr) {
-}
-
-// data attributes
-div[foo="bar"] {
-}
-
-// language selctor
-div:lang() {
-}
-
-// movement
-div {
-    &:active {
-    }
-
-    &:hover {
-    }
-
-    &:focus {
-    }
-}
-
-// children selectors
-div {
-    &:first-child {
-    }
-
-    &:last-child {
-    }
-
-    &:only-child {
-    }
-}
-
-// sibling selectors
-div {
-    &:first-of-type {
-    }
-
-    &:last-of-type {
-    }
-
-    &:only-of-type {
-    }
-
-    &:nth-of-type(n) {
-
-    }
-}
