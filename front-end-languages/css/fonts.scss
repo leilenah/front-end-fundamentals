@@ -1,0 +1,12 @@
+/**
+ * CSS Fonts
+ */
+
+div {
+    font-family: sick-font; // @font-face
+}
+
+@font-face {
+    font-family: sick-font;
+    src: url(sick-font.woff); // path to sick custom font
+}
