@@ -1,0 +1,25 @@
+/**
+ * CSS Transitions
+ *
+ * transition:                 shorthand for setting transition properties
+ * transition-delay:           transition delay in seconds
+ * transition-duration:        transition duration in seconds or milliseconds
+ * transition-property:        property that the transition should be applied to
+ * transition-timing-function: speed curve of the transition effect
+ */
+
+.transition-box {
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    background-color: blue;
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+    // transition: width 2s, height 2s;
+    // transition-delay: 2s;
+    &:hover {
+        // width: 500px;
+        // height: 500px;
+        transform: rotate(90deg);
+    }
+}

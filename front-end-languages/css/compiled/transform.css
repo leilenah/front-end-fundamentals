@@ -8,5 +8,5 @@
   transition: transform 2s;
 }
 .transform-box:hover {
-  transform: skewX(20deg);
+  transform: rotate(20deg);
 }
