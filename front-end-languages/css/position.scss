@@ -1,0 +1,11 @@
+/**
+ * CSS position
+ */
+
+div {
+    position: static; // render in document order (default)
+    position: relative; // position relative to normal position
+    position: fixed; // positioned relative to browser window
+    position: absolute; // positioned relative to first positioned (non-static) element
+    position: sticky; // positioned based on user's scroll position
+}
