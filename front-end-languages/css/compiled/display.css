@@ -25,3 +25,57 @@
  * run-in:             display as block or inline, depending on context
  * contents:           make the container disappear, making child elements children of the next ancestor
  */
+.block {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+}
+
+h3 {
+  text-align: center;
+}
+
+.display-block {
+  display: block;
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/** display flex
+ *
+ * display:         flex
+ * justify-content: horizontal alignment
+ * flex-direction:  direction of flexible items
+ * align-items:     vertical alignment of items
+ * flex-wrap:       specifies whether items should wrap or not
+ * align-content:   aligns flex lines (opposed to flex items)
+ * flex-flow:       shorthand for flex direction and flex wrap
+ * order:           order of flexible item
+ * align-self:      overrides align-items
+ * flex:            shorthand for flex grow, flex-shrink and flex-basis
+ */
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-grid {
+  display: grid;
+  justify-items: center;
+}
+.display-grid .block.one {
+  grid-column: 1;
+}
+.display-grid .block.two {
+  grid-column: 2;
+}
+.display-grid .block.three {
+  grid-solumn: 3;
+}
+.display-grid .block.four {
+  grid-row: 2;
+  grid-column: 4;
+}
