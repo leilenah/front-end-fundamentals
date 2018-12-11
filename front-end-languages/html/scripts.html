@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 
-<!-- script link -->
-<script src="myScript.js"></script>
+<html>
+    <body>
+        <!-- script link -->
+        <script src="myScript.js"></script>
 
-<!-- inline script -->
-<script type="text/javascript">
-    function sayHello() {
-        alert('Hi!!!!');
-    }
+        <!-- inline script -->
+        <script type="text/javascript">
+            function sayHello() {
+                alert('Hi!!!!');
+            }
 
-    sayHello();
-</script>
+            sayHello();
+        </script>
 
-<!-- asynchronous -->
-<script src="myScript.js" async></script>
+        <!-- asynchronous -->
+        <script src="myScript.js" async></script>
 
-<!-- preload before primary render -->
-<link rel="preload" href="myScript.js" as="script">
+        <!-- preload before primary render -->
+        <link rel="preload" href="myScript.js" as="script">
 
-<!-- defer until after page has finished parsing -->
-<script src="myScript.js" defer></script>
+        <!-- defer until after page has finished parsing -->
+        <script src="myScript.js" defer></script>
+    </body>
+</html>
