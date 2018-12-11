@@ -1,0 +1,16 @@
+/**
+ * CSS Borders
+ *
+ * border:                   shorthand for all border properties
+ * border-width:             width of border
+ * border-style:             set the style of the borders
+ * border-color:             color of border
+ * border-radius:            creates rounded corners
+ * border-{direction}:       set left, top, right or bottom border
+ * border-{direction}-color: set border color of specific border
+ * border-{direction}-style: set style of a specific border
+ * border-{direction}-width: set the width of a specific border
+ */
+.box {
+  border: 1px solid black;
+}

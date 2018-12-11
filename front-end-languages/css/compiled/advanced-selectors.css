@@ -1,0 +1,64 @@
+/**
+ * Advanced selectors: https://www.w3.org/TR/selectors/#selectors
+ */
+/**
+ * inclusive / exclusive selectors
+ *
+ * &:not()
+ * &:is()
+ * &:where()
+ * &:has()
+ */
+/**
+ * direction selectors
+ *
+ * &:dir(ltr)
+ */
+/**
+ * data attributes
+ *
+ * &[foo]
+ * &[foo="bar"]
+ */
+/**
+ * language selctor
+ *
+ * &:lang(x, y)
+ */
+/**
+ * movement
+ *
+ * &:active
+ * &:hover
+ * &:focus
+ */
+/**
+ * children selectors
+ *
+ * &:first-child
+ * &:last-child
+ * &:only-child
+ */
+/**
+ * sibling selectors
+ *
+ * &:first-of-type
+ * &:last-of-type
+ * &:only-of-type
+ * &:nth-of-type(n)
+ */
+/**
+ * direct child
+ *
+ * div > .child
+ */
+/**
+ * immediate preceeding child
+ *
+ * div + .child
+ */
+/**
+ * any preceeding child
+ *
+ * div ~ .child
+ */
