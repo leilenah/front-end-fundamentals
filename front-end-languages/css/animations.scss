@@ -19,8 +19,8 @@ $box-size: 200px;
     width: $box-size;
     height: $box-size;
     background-color: #ffff00;
-    animation-name: change-color; // animation name
-    animation-duration: 3s; // duration needs to be specified
+    // animation-name: change-color; // animation name
+    // animation-duration: 3s; // duration needs to be specified
 }
 
 #animated-color-percentage-box {
@@ -47,6 +47,22 @@ $box-size: 200px;
         animation-direction: alternate; // alternate animation direction
     }
 }
+
+
+#container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+}
+
+
 
 /**
  * Keyframes
