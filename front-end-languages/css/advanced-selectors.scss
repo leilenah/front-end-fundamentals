@@ -2,81 +2,73 @@
  * Advanced selectors: https://www.w3.org/TR/selectors/#selectors
  */
 
-// inclusive / exclusive selectors
-div {
-    &:not() {
-    }
+/**
+ * inclusive / exclusive selectors
+ *
+ * &:not()
+ * &:is()
+ * &:where()
+ * &:has()
+ */
 
-    &:is() {
-    }
+/**
+ * direction selectors
+ *
+ * &:dir(ltr)
+ */
 
-    $&:where() {
-    }
+/**
+ * data attributes
+ *
+ * &[foo]
+ * &[foo="bar"]
+ */
 
-    &:has() {
-    }
-}
+/**
+ * language selctor
+ *
+ * &:lang(x, y)
+ */
 
-// direction selectors
-div:dir(ltr) {
-}
+/**
+ * movement
+ *
+ * &:active
+ * &:hover
+ * &:focus
+ */
 
-// data attributes
-div[foo="bar"] {
-}
+/**
+ * children selectors
+ *
+ * &:first-child
+ * &:last-child
+ * &:only-child
+ */
 
-// language selctor
-div:lang() {
-}
+/**
+ * sibling selectors
+ *
+ * &:first-of-type
+ * &:last-of-type
+ * &:only-of-type
+ * &:nth-of-type(n)
+ */
 
-// movement
-div {
-    &:active {
-    }
+/**
+ * direct child
+ *
+ * div > .child
+ */
 
-    &:hover {
-    }
+/**
+ * immediate preceeding child
+ *
+ * div + .child
+ */
 
-    &:focus {
-    }
-}
-
-// children selectors
-div {
-    &:first-child {
-    }
-
-    &:last-child {
-    }
-
-    &:only-child {
-    }
-}
-
-// sibling selectors
-div {
-    &:first-of-type {
-    }
-
-    &:last-of-type {
-    }
-
-    &:only-of-type {
-    }
-
-    &:nth-of-type(n) {
-
-    }
-}
-
-// direct child
-div > .child {
-}
-
-// immediate preceeding child
-div + .child {
-}
-
-// preceeding child
-div ~ .child {
-}
+/**
+ * any preceeding child
+ *
+ * div ~ .child
+ */

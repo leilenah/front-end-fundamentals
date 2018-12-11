@@ -1,0 +1,35 @@
+/**
+ * CSS3
+ *
+ * List of dope features made available in CSS3.
+ */
+div {
+  animation: dope-animation 2s linear;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  transition: width 2s, height 2s;
+}
+div:hover {
+  width: 200px;
+  height: 200px;
+}
+
+div {
+  width: calc(100% - 40px);
+}
+
+div:before {
+  content: 'This text will appear at the top of all divs';
+}
+
+div {
+  border: 10px solid transparent;
+  border-image: url(border.png) 30 round;
+}
+
+div {
+  background: url(background1.png), url(background2.png);
+}

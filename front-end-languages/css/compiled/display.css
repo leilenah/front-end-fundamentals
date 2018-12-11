@@ -1,0 +1,27 @@
+/**
+ * CSS Display
+ *
+ * none:               completely remove element
+ * initial:            set this property ro default value
+ * inherit:            inherit from parent
+ * block:              start on new line and take up whole width of parent container
+ * inline: display     inline and do not take on a set width or height
+ * inline-block:       display inline and you can set a width and height
+ * flex:               block-level flex container
+ * inline-flex:        inline-level flex container
+ * grid:               block-level grid container
+ * inline-grid:        inline-level grid container
+ * table:              mimic behaviour of <table> element
+ * table-caption:      mimic behaviour of <caption> element
+ * table-column-group: mimic behaviour of <colgroup> element
+ * table-header-group: mimic hehaviour of <thead> element
+ * table-footer-group: mimic behaviour of <tfoot> element
+ * table-row-group:    mimic behaviour of <tbody> element
+ * table-cell:         mimic behaviour of <td> element
+ * table-column:       mimic behaviour of <col> element
+ * table-row:          mimic behaviour of <tr> element
+ * inline-table:       inline-level table
+ * list-item:          mimic behaviour of <li> element
+ * run-in:             display as block or inline, depending on context
+ * contents:           make the container disappear, making child elements children of the next ancestor
+ */
