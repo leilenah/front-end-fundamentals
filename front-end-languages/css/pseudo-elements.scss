@@ -1,0 +1,17 @@
+/**
+ * CSS Pseudo Elements
+ */
+
+// after -- simulate first child
+div {
+    &:after {
+        content: '';
+    }
+}
+
+// before -- simulate first child
+div {
+    &:before {
+        content: '';
+    }
+}
