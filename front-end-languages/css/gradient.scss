@@ -1,0 +1,10 @@
+/**
+ * CSS Gradient
+ */
+
+ .gradient-box {
+    height: 200px;
+    width: 600px;
+    // background-image: linear-gradient(red, yellow); // linear gradient is applied as background image
+    background-image: linear-gradient(to right, red, yellow, blue); // you can specify gradient direction
+ }

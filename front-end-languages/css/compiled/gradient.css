@@ -1,0 +1,8 @@
+/**
+ * CSS Gradient
+ */
+.gradient-box {
+  height: 200px;
+  width: 600px;
+  background-image: linear-gradient(to right, red, yellow, blue);
+}
