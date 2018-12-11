@@ -1,0 +1,22 @@
+/**
+ * Sass Mixins <3
+ */
+.element {
+  transform: rotate(30deg);
+  display: block;
+}
+.element #col-1 {
+  grid-column: i;
+}
+.element #col-2 {
+  grid-column: i;
+}
+.element #col-3 {
+  grid-column: i;
+}
+.element #col-4 {
+  grid-column: i;
+}
+.element #photo- {
+  display: inline-block;
+}

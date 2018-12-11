@@ -1,0 +1,34 @@
+/**
+ * Sass Mixins <3
+ */
+
+@mixin transform($property, $list, $display-block: true) {
+    transform: $property;
+
+    // if else statement
+    @if $display-block {
+        display: block;
+    } @else {
+        display: flex;
+    }
+
+    // for loop
+    @for $i from 1 through 4 {
+
+        // variable syntax #{$}
+        #col-#{$i} {
+            grid-column: i;
+        }
+    }
+
+    // each
+    @each $item in $list {
+        #photo-#{$item} {
+            display: inline-block;
+        }
+    }
+}
+
+.element{
+    @include transform(rotate(30deg), null); // @include to apply mixin
+}
