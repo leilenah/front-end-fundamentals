@@ -1,1 +1,18 @@
-// 3d transformations
+/**
+ * CSS Transform
+ */
+
+.transform-box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    transition: transform 2s;
+    &:hover {
+        // transform: scale(1.5); // scale by 50%
+        // transform: scaleY(1.5); // scale Y axis by 50%
+        // transform: scaleX(1.5); // scale X axis by 50%
+        // transform: skewY(20deg); // skew 20 degrees on the Y axis
+        // transform: skewX(20deg); // skwy 20 degrees on the X axis
+        transform: rotate(20deg); // rotate 20 degrees to the right
+    }
+}

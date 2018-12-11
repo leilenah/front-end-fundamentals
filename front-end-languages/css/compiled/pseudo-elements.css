@@ -1,0 +1,10 @@
+/**
+ * CSS Pseudo Elements
+ */
+div:after {
+  content: '';
+}
+
+div:before {
+  content: '';
+}

@@ -1,0 +1,10 @@
+/**
+ * CSS position
+ */
+div {
+  position: static;
+  position: relative;
+  position: fixed;
+  position: absolute;
+  position: sticky;
+}
