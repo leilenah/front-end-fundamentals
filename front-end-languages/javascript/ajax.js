@@ -3,7 +3,7 @@
  */
 $.ajax({
     url: ''
-}).done(function(response){
+}).done(function(response) {
     alert(response);
 }).fail(function() {
     window.console.log('ERROR');
@@ -11,6 +11,9 @@ $.ajax({
 
 /**
  * Fetch API
+ *
+ * Fetch returns a Promise that resolves to the Response to that request.
+ * Along with the url param, you can pass an init param.
  */
 fetch(url)
     .then(function(response) {
