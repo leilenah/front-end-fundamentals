@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         sass: {
             dist: {
                 options: {
@@ -17,13 +18,13 @@ module.exports = function(grunt) {
             }
         },
 
-        // TODO: Fix grunt watch
-        watch: {
-            sass: {
-                files: ['**/*.scss']
-            },
-            tasks: ['sass']
-        }
+		watch: {
+			css: {
+				files: '**/*.scss',
+				tasks: ['sass']
+			}
+		}
+
     });
 
     // load tasks

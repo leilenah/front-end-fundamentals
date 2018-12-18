@@ -30,7 +30,7 @@ Install `npm packages`:
 npm install
 ```
 
-Compile Sass changes:
+Dynamically compile Sass changes:
 ```
-grunt sass
+grunt watch
 ```

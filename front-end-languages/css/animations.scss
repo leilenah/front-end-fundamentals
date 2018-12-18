@@ -48,7 +48,6 @@ $box-size: 200px;
     }
 }
 
-
 #container {
     width: 400px;
     height: 400px;
@@ -62,7 +61,39 @@ $box-size: 200px;
     }
 }
 
-
+#slideshow-container {
+    $image-width: 500px;
+    width: 500px;
+    margin: 50px 0 0 0;
+    .slideshow-images {
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        .image {
+            width: $image-width;
+            position: absolute;
+            // visibility: hidden;
+            &[data-number="1"] {
+                // visibility: visible;
+            }
+            &[data-number="2"] {
+                left: $image-width;
+            }
+            &[data-number="3"] {
+                left: $image-width * 2;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .next, .prev {
+        cursor: pointer;
+    }
+    .hidden {
+        display: none;
+    }
+}
 
 /**
  * Keyframes

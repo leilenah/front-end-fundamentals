@@ -55,6 +55,35 @@
   background-color: red;
 }
 
+#slideshow-container {
+  width: 500px;
+  margin: 50px 0 0 0;
+}
+#slideshow-container .slideshow-images {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+#slideshow-container .slideshow-images .image {
+  width: 500px;
+  position: absolute;
+}
+#slideshow-container .slideshow-images .image[data-number="2"] {
+  left: 500px;
+}
+#slideshow-container .slideshow-images .image[data-number="3"] {
+  left: 1000px;
+}
+#slideshow-container .slideshow-images .image img {
+  width: 100%;
+}
+#slideshow-container .next, #slideshow-container .prev {
+  cursor: pointer;
+}
+#slideshow-container .hidden {
+  display: none;
+}
+
 /**
  * Keyframes
  *
