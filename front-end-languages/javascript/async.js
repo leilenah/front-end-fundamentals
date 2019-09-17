@@ -1,5 +1,8 @@
 /**
- * async
+ * Async / Await
+ *
+ * Defines an asynchronous function.
+ * Async functions return an AsyncFunction object.
  *
  * async functions always return a promise.
  * Non-promises are wrapped in a promise.
@@ -27,3 +30,11 @@ getPromise.then(alert); // 1
  */
 const onePromise = await getPromise(); // wait until promise resolves
 alert(onePromise);
+
+async function resolveAfterThreeSeconds() {
+	return new Promise (resolve => {
+		setTimeout(() => {
+			resolve('resolved');
+		}, 3000)
+	})
+}

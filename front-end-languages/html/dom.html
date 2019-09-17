@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- DOCTYPE declaration instructs the browser on what version of HTML the page is written in -->
+<!-- In HTML5 there is only one version (unlike HTML4) -->
+
+<html>
+  <head>
+    <title>DOM Test document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../javascript/dom.js"></script>
+    <!-- <script type="text/javascript" src="../javascript/looping.js"></script> -->
+    <script type="text/javascript" src="../javascript/ajax.js"></script>
+    <!-- <link rel="stylesheet" href=""> -->
+  </head>
+
+  <body>
+    <div id="test-element-1" class="test-element">
+      <main class="test-element__content">
+        <section class="test-element__section">
+            <p class="test-element__description">
+              This is the description of a test element.
+            </p>
+
+            <picture class="test-element__image-wrapper">
+              <!-- Desktop SRC -->
+              <source media="(min-width: 1024px)" srcset="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/01/shutterstock_587562362.jpg">
+              <!-- Mobile src -->
+              <img class="test-element__image" src="https://www.nutro.com/images/default-source/Product-Pet-Images-2017/small_breed.png?sfvrsn=0" alt="Cute puppy looking up at camera.">
+            </picture>
+          </section>
+
+          <section class="test-element__section">
+            <p class="test-element__description">
+              This is another description of another test element.
+            </p>
+          </section>
+
+          <section id="last-section" class="test-element__section">
+            <p class="test-element__description">
+              This is another description of another test element.
+            </p>
+          </section>
+      </main>
+    </div>
+  </body>
+</html>

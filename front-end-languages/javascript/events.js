@@ -13,3 +13,12 @@ $('.elements').on('click', function() {
 element.addEventListener('click', function() {
 	// callback
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+	console.log('the content has loaded')
+});
+
+element.onClick = () => {
+	console.log('elenent was clicked');
+}
+
