@@ -27,20 +27,25 @@ const testDom = () => {
   // get FIRST element based on selector
   // returns the element node (unline querySelectorAll, which returns a nodelist)
   document.querySelector('.test-element__image');
+  querySelector
 
   // get ALL elements based on selector
   // returns a node list (of element notes)
   // You can loop through this, or access by index
   document.querySelectorAll('.test-element__description');
+  querySelectorAll
 
   // get element by ID
   document.getElementById('test-element-1');
+  getElementById
 
   // get elements by class name
   document.getElementsByClassName('test-element__content');
+  getElementsByClassName
 
   // get elements by tag name
   document.getElementsByTagName('picture');
+  getElementsByTagName
 
   /**
    * Changing elemnts
@@ -50,6 +55,7 @@ const testDom = () => {
 
   // change the inner HTML of an element
   document.querySelector('.test-element__description').innerHTML = 'Hello Puppy!';
+  .innerHTML
 
   // change the attribute value of an element
   // alt
@@ -60,6 +66,7 @@ const testDom = () => {
   // style
   // title
   document.querySelector('.test-element__image').src = 'leilenah.jpg';
+  .style.color
 
   // change the style of an element
   document.querySelector('.test-element__description').style.color = 'red';
@@ -76,6 +83,7 @@ const testDom = () => {
 
   // create new element
   const section = document.createElement('section');
+  createElement
 
   // store element string
   const ghostElement =
@@ -93,11 +101,13 @@ const testDom = () => {
   const mainElement = document.querySelector('.test-element__content');
   const firstSection = document.querySelector('.test-element__section')
   mainElement.removeChild(firstSection);
+  // removeChild
 
   // append child
   const newSection = document.createElement('section');
   newSection.innerHTML = 'This is a BRAND new section sis';
   mainElement.appendChild(newSection);
+  // appendChild
 
   // replace child
   const newDiv = document.createElement('div');
@@ -107,6 +117,7 @@ const testDom = () => {
     </p>`;
 
   mainElement.replaceChild(newDiv, newSection);
+  // replaceChold
 
   // write some text directly to the HTML element
   // mostly used for testing
@@ -128,6 +139,7 @@ const testDom = () => {
   document.body
 
   // return cookie
+  // use express for this
   document.cookie
 
   // return doctype
@@ -186,3 +198,4 @@ const testDom = () => {
 }
 
 document.addEventListener('DOMContentLoaded', testDom);
+.addEventListener

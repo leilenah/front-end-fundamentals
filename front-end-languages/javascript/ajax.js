@@ -57,6 +57,17 @@ fetch(siteUrl, {
 })
 
 
+fetch(url, {
+
+})
+.then((response) => response.json())
+.then((data) => {
+    // do what you want with the data
+})
+.catch((error) => {
+    // handle the error
+})
+
 /**
  * XMLHttpRequest
  */
