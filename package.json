@@ -1,16 +1,16 @@
 {
-    "name": "front-end-fundamentals",
-    "version": "1.0.0",
-    "author": "Leilenah Mamea",
-    "description": "This repo contains refreshers on front end web development fundamentals.",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/leilenah/front-end-fundamentals"
-    },
-    "devDependencies": {
-      "grunt": "^1.0.2",
-      "grunt-cli": "1.3.2",
-      "grunt-contrib-watch": "1.1.0",
-      "grunt-contrib-sass": "1.0.0"
-    }
+  "name": "front-end-fundamentals",
+  "version": "1.0.0",
+  "author": "Leilenah Mamea",
+  "description": "This repo contains refreshers on front end web development fundamentals.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leilenah/front-end-fundamentals"
+  },
+  "devDependencies": {
+    "grunt": "^1.2.1",
+    "grunt-cli": "1.3.2",
+    "grunt-contrib-sass": "1.0.0",
+    "grunt-contrib-watch": "1.1.0"
   }
+}

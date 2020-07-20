@@ -1,0 +1,12 @@
+.post {
+  display: none;
+}
+
+.post.active {
+  display: block;
+}
+
+button.hidden {
+  display: none;
+}
+
