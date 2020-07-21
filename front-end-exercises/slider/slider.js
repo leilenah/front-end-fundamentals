@@ -1,34 +1,62 @@
-/**
- * Fetch a list of posts from Posts API and render post data in the post-container div.
- * Build a slider that displays the contents of each post and lets you click through each one.
- *
- * Post API endpoint: https://jsonplaceholder.typicode.com/posts
- */
+// TODO: css animation transitions
+// TODO: logic to hide prev and next buttons when approproate
 
-const buttons = document.querySelectorAll('button');
 
-buttons.forEach((button) => {
-	button.addEventListener('click', (e) => {
-  	const postContainer = document.querySelector("#post-container");
-    const prevButton = document.querySelector("#prev");
-    const nextButton = document.querySelector("#next");
-    const activePost = document.querySelector(".post.active");
-    let newActivePost;
+async function render() {
+  const response = await fetch('https://swapi.dev/api/films/');
+  const data = await response.json();
+  const films = data.results;
 
-    if (event.target.id === "next") {
-    	newActivepost = activePost.nextSibling;
-    } else {
-    	newActivePost = activePost.previousSibling;
-    }
+  const swContainer = document.querySelector('#sw-container');
+  const buttons = document.querySelectorAll('#pagination-buttons button');
 
-    activePost.classList.remove("active");
-    newActivePost.classList.add("active");
+  films.forEach(film => {
+  	const { title, director, release_date } = film;
+  	const div = document.createElement("div");
 
-    if (postContainer.firstChild.classList.has("active")) {
-    	prevButton.classList.add("hidden")
-    } else {
-    	prevButton.classList.remove("hidden");
-    }
+    div.classList.add('sw-container__film');
+
+    div.innerHTML = `
+    	<h2>${title}<h2>
+      <div>
+      	Directed by ${director}
+      </div>
+      <div>
+      	Released on ${release_date}
+      </div>
+    `;
+
+    swContainer.append(div);
   });
-});
 
+
+
+
+  for (const button of buttons) {
+    button.addEventListener('click', (e) => {
+      const id = event.target.getAttribute('id');
+      const style = window.getComputedStyle(swContainer);
+      const rightPx = style.getPropertyValue('right');
+      const right = parseInt(rightPx, 10);
+
+
+      switch (id) {
+        case "next":
+        	swContainer.style.right = `${right + 522}px`;
+          break;
+
+         case "prev":
+        	swContainer.style.right = `${right - 522}px`;
+          break;
+      }
+    });
+  }
+
+
+
+
+  return films;
+};
+
+render()
+	.catch(err => console.error(err));
