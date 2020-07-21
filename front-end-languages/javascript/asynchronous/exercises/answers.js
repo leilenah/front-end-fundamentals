@@ -268,3 +268,40 @@ const files = ["./files/demofile.txt", "./files/demofile.other.txt"];
   const fileContents = await Promise.all(promises);
   console.log(fileContents);
 })();
+
+
+/**
+ * Question 9
+ */
+
+const logOne = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, Math.random() * 1000, 'one!');
+  });
+};
+
+const logTwo = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, Math.random() * 1000, 'two!');
+  });
+}
+
+function inOrder(logOne, logTwo) {
+	logOne()
+    .then(data => {
+      console.log(data);
+      logTwo().then(data => console.log(data))
+  	});
+}
+
+inOrder(logOne, logTwo);
+
+/**
+ * Question 10
+ */
+
+
+/**
+ * Question 11
+ */
+
