@@ -1,0 +1,70 @@
+/**
+ * Image Container
+ */
+
+.image-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.image {
+  width: 100%;
+}
+
+.image-caption {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+  }
+
+  .image-wrapper, .image-caption {
+    width: 100%;
+  }
+
+  .image-wrapper {
+    margin: 0 0 20px;
+  }
+}
+
+
+/**
+ * Video Container
+ */
+
+.video-container {
+  display: flex;
+  align-items: center;
+}
+
+.video-embed {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.video-caption {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+  }
+
+  .video-embed {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .video-caption {
+    width: 100%;
+  }
+}
