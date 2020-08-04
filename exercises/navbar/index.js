@@ -5,8 +5,6 @@
       const rect = section.getBoundingClientRect();
       const navItem = document.querySelector(`#nav-link-${i}`);
 
-      if (!navItem) return;
-
       if ((rect.top <= window.innerHeight) && (rect.bottom > window.innerHeight)) {
         navItem.classList.add("nav-link--active");
       } else {
