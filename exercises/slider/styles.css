@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 500px;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+}
+
+.slider__slide {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  padding: 0;
+}
+
+.slider__item {
+  max-width: 25%;
+}
+
+.slider__item-img {
+  width: 100%;
+}
+
+.btn-container {
+  width: 500px;
+}
+
+#prev-btn {
+  float: left;
+}
+
+#next-btn {
+  float: right;
+}
