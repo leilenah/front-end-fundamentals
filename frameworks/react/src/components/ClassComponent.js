@@ -30,6 +30,7 @@ import React from "react";
 export class ClassComponent extends React.Component {
   /**
    * constructor(props)
+   *
    * Constructor is only needed if you need to init state or bind methods.
    */
   constructor(props) {
@@ -46,6 +47,7 @@ export class ClassComponent extends React.Component {
 
   /**
    * componentDidMount()
+   *
    * Called after render. Initialization that requires DOM nodes should go here.
    * If you need to load data from a remote endpoint, this is a good place to do so.
    */
@@ -56,6 +58,7 @@ export class ClassComponent extends React.Component {
 
   /**
    * componentDidUpdate()
+   *
    * Called after an update occurs. This is not called on initial render.
    * Use this to operate on the DOM when the component has been updated.
    */
@@ -66,7 +69,8 @@ export class ClassComponent extends React.Component {
 
   /**
    * componentWillUnmount()
-   * Called immediately after component is unmounted and destroyed.
+   *
+   * Called immediately before component is unmounted and destroyed.
    * Use this method for cleanup.
    */
   componentWillUnmount() {
@@ -87,6 +91,7 @@ export class ClassComponent extends React.Component {
 
   /**
    * render()
+   *
    * Render is the only required method.
    */
   render() {
