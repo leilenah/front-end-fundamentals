@@ -1,6 +1,6 @@
 (function () {
   setTimeout(() => {
     const box = document.querySelector(".box");
-    // box.classList.add("animate");
-  }, 2000);
+    box.classList.add("animate");
+  }, 3000);
 })();

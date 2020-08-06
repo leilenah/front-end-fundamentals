@@ -12,10 +12,11 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
+  background-color: pink;
 
-  animation-name: slide-box;
+  /* animation-name: slide-box;
   animation-duration: 4s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 
   /* background-color: pink;
   left: 0;
@@ -27,11 +28,17 @@ body {
   background-color: red;
 } */
 
+.box.animate {
+  animation-name: slide-box;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+
 
 @keyframes slide-box {
   from {
     left: 0;
-    background-color: pink;
   }
 
   to {

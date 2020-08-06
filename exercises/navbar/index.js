@@ -5,16 +5,29 @@
    */
 
   const sections = document.querySelectorAll(".section-wrapper");
-  document.addEventListener('scroll', () => {
-    sections.forEach((section, i) => {
-      const rect = section.getBoundingClientRect();
-      const navItem = document.querySelector(`#nav-link-${i}`);
 
-      if ((rect.top <= window.innerHeight) && (rect.bottom > window.innerHeight)) {
-        navItem.classList.add("nav-link--active");
-      } else {
-        navItem.classList.remove("nav-link--active");
-      }
-    });
+  const observerCallback = ([entry]) => {
+    const i = entry.target.getAttribute("data-index");
+    const navItem = document.querySelector(`#nav-link-${i}`);
+
+
+    // if (i == "3") {
+    //   console.log(entry.intersectionRatio);
+    // }
+
+    if (entry.isIntersecting) {
+      // console.log(entry.target);
+
+      navItem.classList.add("nav-link--active");
+      return;
+    }
+
+    navItem.classList.remove("nav-link--active");
+  };
+
+  const observer = new IntersectionObserver(observerCallback, {
+    threshold: 1.0
   });
+
+  sections.forEach(section => observer.observe(section));
 })();

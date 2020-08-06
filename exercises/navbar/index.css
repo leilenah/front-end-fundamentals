@@ -34,10 +34,6 @@ body {
   height: 600px
 }
 
-#section-0 {
-  background-color: khaki;
-}
-
 #section-1 {
   background-color: pink;
 }
@@ -64,4 +60,8 @@ body {
 
 #section-7 {
   background-color: gold;
+}
+
+#section-8 {
+  background-color: khaki;
 }

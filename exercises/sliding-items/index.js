@@ -5,10 +5,16 @@
 
   itemContainer.style.position = "relative";
 
-  setInterval(() => {
-    if (topCounter > -1000) {
-      topCounter--;
-      itemContainer.style.top = `${topCounter}px`;
+  const slideUp = () => {
+    if (topCounter < -1000) {
+      clearInterval(interval);
+      return;
     }
-  }, 10);
+
+    topCounter--;
+    itemContainer.style.top = `${topCounter}px`;
+  }
+
+  // assigning `interval` to setInterval calls setInterval()
+  const interval = setInterval(slideUp, 10);
 })();
