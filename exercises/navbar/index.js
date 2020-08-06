@@ -1,4 +1,9 @@
 (function () {
+
+  /**
+   * TODO: Re-write using intersection observer
+   */
+
   const sections = document.querySelectorAll(".section-wrapper");
   document.addEventListener('scroll', () => {
     sections.forEach((section, i) => {
