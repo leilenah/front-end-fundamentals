@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.calc {
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.calc__result {
+  display: flex;
+  justify-content: flex-end;
+  height: 70px;
+  padding: 0 20px;
+  background-color: rgb(91, 83, 69);
+  font-size: 54px;
+  color: white;
+}
+.calc__input-row {
+  display: flex;
+  width: 100%;
+}
+
+.calc__input-btn {
+  min-width: 25%;
+  height: 50px;
+  background-color: rgb(255, 148, 47);
+  border: 0.5px solid rgb(62, 58, 55);
+}
+
+.calc__input-btn--gray {
+  background-color: rgb(117, 113, 107);
+}
